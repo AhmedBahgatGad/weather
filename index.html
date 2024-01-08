@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style/all.min.css">
+  <link rel="stylesheet" href="assets/style/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/style/style.css">
+  <link rel="stylesheet" href="assets/style/mediaquery.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" type="img/png" href="assets/imgs/favicon.ico">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- oppening section -->
+  <div class="layertop"></div>
+  <div class="layerbtm"></div>
+  <div class="loading"></div>
+  <!-- oppening section -->
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark-subtle fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Weather</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+  <section class="py-5" id="home">
+    <div class="container py-5 d-flex w-75">
+      <input type="search" class="form-control w-75 me-auto" placeholder="Find Your Location..." name="" id="location">
+      <button class="btn bg-danger-subtle px-3" id="search">Find</button>
+    </div>
+    <div class="container w-75">
+      <div id="content" class="row">
+      </div>
+    </div>
+  </section>
+  <footer class="pt-3" id="contact">
+    <p class="text-white text-center fs-3">Contact Us</p>
+    <div class="container py-4 d-flex w-75">
+      <input type="text" class="form-control w-75 me-auto" placeholder="Contact Us..." name="" id="">
+      <button class="btn bg-danger-subtle px-3">Contact</button>
+    </div>
+  </footer>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

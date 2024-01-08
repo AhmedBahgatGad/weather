@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,.4) , rgba(0,0,0,.5)),url(../imgs/pxfuel.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* loading */
+.layertop{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    z-index: 555555555555555555;
+    animation: top 1s;
+    animation-fill-mode: forwards;
+}
+.layerbtm{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50%;
+    background-color: white;
+    z-index: 555555555555555555;
+    animation: bottom 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes top{
+    from {
+        top: 50%;
+    }
+    to {
+        top: 100%;
+        opacity: 0;
+    }
+}
+@keyframes bottom{
+    from {
+        bottom: 50%;
+    }
+    to {
+        bottom: 100%;
+        opacity: 0;
+    }
+}
+.loading{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border:  10px solid;
+    border-color: #eee black #eee #eee;
+    border-radius: 50%;
+    z-index: 555555555555555555555555555;
+    animation: load 1.5s, load2 1.5s 1.5s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes load{
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+        opacity: 0;
+    }
+}
+@keyframes load2{
+    from{
+        display: block;
+    }
+    to{
+        display: none;
+    }
+}
+/* loading */
+span{
+    padding: 0px 10px;
+    color: antiquewhite;
+}
+.main{
+    background-color: #0396A6;
+}
+.inner{
+    background-color: #266573;
+    color: #F2E8DF;
+}
+.inner i{
+    color: gold;
+}
